@@ -16,7 +16,23 @@ using namespace cv;
 
 
 #define kClassifierFace @"haarcascade_frontalface_alt"
+
+// V1
+//#define kClassifierEye  @"haarcascade_eye"
+// V2
 #define kClassifierEye  @"haarcascade_eye_tree_eyeglasses"
+
+// Peu de détection de fermeture.
+//#define kClassifierEye  @"haarcascade_lefteye_2splits"
+//#define kClassifierEye  @"haarcascade_righteye_2splits"
+
+// De la merde : pas de détection de fermeture des yeux.
+//#define kClassifierEye  @"haarcascade_mcs_eyepair_big"
+//#define kClassifierEye  @"haarcascade_mcs_eyepair_small"
+
+// De la merde : beaucoup trop de faux positifs.
+//#define kClassifierEye  @"haarcascade_mcs_lefteye"
+//#define kClassifierEye  @"haarcascade_mcs_righteye"
 
 
 
@@ -86,9 +102,9 @@ RNG rng(12345);
 
     // Test functions.
     // This can be commented out and ignored.
-#ifdef AUTO_START_SCAN_TEST
+//#ifdef AUTO_START_SCAN_TEST
     [self performSelector:@selector(launchScanTest) withObject:nil afterDelay:0.3];
-#endif
+//#endif
 
     [[UIScreen mainScreen] setBrightness:1.0];
 }
@@ -134,19 +150,21 @@ RNG rng(12345);
 //    cvtColor( frame, frame_gray, CV_BGR2GRAY );
 //    cvtColor( frame, frame_gray, CV_GRA );
     
-    frame_gray = frame;
-//    equalizeHist( frame_gray, frame_gray );
+    frame_gray = frame.clone();
+    equalizeHist( frame_gray, frame_gray );
 //    medianBlur(frame_gray, frame_gray, 3);
-    blur(frame_gray, frame_gray, cv::Size(3, 3));
+//    blur(frame_gray, frame_gray, cv::Size(3, 3));
     
     //-- Detect faces
-    face_cascade.detectMultiScale( frame_gray, faces, 1.1, 2, 0|CV_HAAR_SCALE_IMAGE, cv::Size(30, 30) );
+    face_cascade.detectMultiScale( frame_gray, faces, 1.1, 2, 0|CV_HAAR_SCALE_IMAGE,
+                                  cv::Size(30, 30) );
     
     for( int i = 0; i < faces.size(); i++ )
     {
         cv::Point center( faces[i].x + faces[i].width*0.5,
                          faces[i].y + faces[i].height*0.5 );
-        ellipse( frame, center, cv::Size( faces[i].width*0.5, faces[i].height*0.5), 0, 0, 360, cv::Scalar( 255, 0, 255 ), 4, 8, 0 );
+        ellipse( frame, center, cv::Size( faces[i].width*0.5, faces[i].height*0.5), 0, 0, 360,
+                cv::Scalar( 255, 0, 255 ), 4, 8, 0 );
         
         Mat faceROI = frame_gray( faces[i] );
         std::vector<cv::Rect> eyes;

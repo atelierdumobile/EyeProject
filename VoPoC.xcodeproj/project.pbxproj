@@ -19,6 +19,18 @@
 			name = "Ad Hoc Distribution";
 			productName = "Ad Hoc Distribution";
 		};
+		4EC50D96165D836A002FBAB8 /* Ad Hoc Distribution 2 */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 4EC50D9A165D836A002FBAB8 /* Build configuration list for PBXAggregateTarget "Ad Hoc Distribution 2" */;
+			buildPhases = (
+				4EC50D99165D836A002FBAB8 /* ShellScript */,
+			);
+			dependencies = (
+				4EC50D97165D836A002FBAB8 /* PBXTargetDependency */,
+			);
+			name = "Ad Hoc Distribution 2";
+			productName = "Ad Hoc Distribution";
+		};
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
@@ -35,7 +47,6 @@
 		4E8373491635A715007C45E2 /* Photo 10-10-12 11 54 19.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4E8373481635A715007C45E2 /* Photo 10-10-12 11 54 19.jpg */; };
 		4EAE800A1644347500A7CC40 /* Change Log.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 4EAE80091644347500A7CC40 /* Change Log.rtf */; };
 		4EB33E6B1649244500B5617C /* Photo 10-10-12 11 54 19 small.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4EB33E6A1649244500B5617C /* Photo 10-10-12 11 54 19 small.jpg */; };
-		4EC50D53165D6C3A002FBAB8 /* UIImage+CvMat.mm in Sources */ = {isa = PBXBuildFile; fileRef = 4EC50D52165D6C3A002FBAB8 /* UIImage+CvMat.mm */; };
 		4EC50D6A165D6C8B002FBAB8 /* haarcascade_eye.xml in Resources */ = {isa = PBXBuildFile; fileRef = 4EC50D55165D6C8B002FBAB8 /* haarcascade_eye.xml */; };
 		4EC50D6B165D6C8B002FBAB8 /* haarcascade_eye_tree_eyeglasses.xml in Resources */ = {isa = PBXBuildFile; fileRef = 4EC50D56165D6C8B002FBAB8 /* haarcascade_eye_tree_eyeglasses.xml */; };
 		4EC50D6C165D6C8B002FBAB8 /* haarcascade_frontalface_alt.xml in Resources */ = {isa = PBXBuildFile; fileRef = 4EC50D57165D6C8B002FBAB8 /* haarcascade_frontalface_alt.xml */; };
@@ -57,16 +68,17 @@
 		4EC50D7C165D6C8B002FBAB8 /* haarcascade_profileface.xml in Resources */ = {isa = PBXBuildFile; fileRef = 4EC50D67165D6C8B002FBAB8 /* haarcascade_profileface.xml */; };
 		4EC50D7D165D6C8B002FBAB8 /* haarcascade_righteye_2splits.xml in Resources */ = {isa = PBXBuildFile; fileRef = 4EC50D68165D6C8B002FBAB8 /* haarcascade_righteye_2splits.xml */; };
 		4EC50D7E165D6C8B002FBAB8 /* haarcascade_upperbody.xml in Resources */ = {isa = PBXBuildFile; fileRef = 4EC50D69165D6C8B002FBAB8 /* haarcascade_upperbody.xml */; };
+		4EC50D89165D7368002FBAB8 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EE0518A16247C7500634436 /* AppDelegate.m */; };
+		4EC50D8A165D7368002FBAB8 /* ViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 4EE0519316247C7500634436 /* ViewController.mm */; };
+		4EC50D8B165D7368002FBAB8 /* UIImage+CvMat.mm in Sources */ = {isa = PBXBuildFile; fileRef = 4EC50D52165D6C3A002FBAB8 /* UIImage+CvMat.mm */; };
+		4EC50D8C165D736D002FBAB8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EE0518616247C7500634436 /* main.m */; };
 		4EE0517B16247C7500634436 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4EE0517A16247C7500634436 /* UIKit.framework */; };
 		4EE0517D16247C7500634436 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4EE0517C16247C7500634436 /* Foundation.framework */; };
 		4EE0517F16247C7500634436 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4EE0517E16247C7500634436 /* CoreGraphics.framework */; };
 		4EE0518516247C7500634436 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4EE0518316247C7500634436 /* InfoPlist.strings */; };
-		4EE0518716247C7500634436 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EE0518616247C7500634436 /* main.m */; };
-		4EE0518B16247C7500634436 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EE0518A16247C7500634436 /* AppDelegate.m */; };
 		4EE0518D16247C7500634436 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 4EE0518C16247C7500634436 /* Default.png */; };
 		4EE0518F16247C7500634436 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4EE0518E16247C7500634436 /* Default@2x.png */; };
 		4EE0519116247C7500634436 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4EE0519016247C7500634436 /* Default-568h@2x.png */; };
-		4EE0519416247C7500634436 /* ViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 4EE0519316247C7500634436 /* ViewController.mm */; };
 		4EE0519716247C7500634436 /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4EE0519516247C7500634436 /* ViewController.xib */; };
 /* End PBXBuildFile section */
 
@@ -76,7 +88,14 @@
 			containerPortal = 4EE0516D16247C7500634436 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 4EE0517516247C7500634436;
-			remoteInfo = OrdoScan;
+			remoteInfo = VoPoC;
+		};
+		4EC50D98165D836A002FBAB8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4EE0516D16247C7500634436 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4EE0517516247C7500634436;
+			remoteInfo = VoPoC;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -166,8 +185,7 @@
 				4E8373481635A715007C45E2 /* Photo 10-10-12 11 54 19.jpg */,
 				4EB33E6A1649244500B5617C /* Photo 10-10-12 11 54 19 small.jpg */,
 			);
-			name = Resources;
-			path = VoPoC/Resources;
+			path = Resources;
 			sourceTree = "<group>";
 		};
 		4EC50D54165D6C8B002FBAB8 /* haarcascades */ = {
@@ -213,7 +231,6 @@
 				4EC50D54165D6C8B002FBAB8 /* haarcascades */,
 			);
 			name = "Test Bench";
-			path = VoPoC;
 			sourceTree = "<group>";
 		};
 		4EE0516B16247C7500634436 = {
@@ -261,8 +278,7 @@
 				4E2C668316259DB3003710BC /* Resources */,
 				4EE0518116247C7500634436 /* Supporting Files */,
 			);
-			name = VoPoC;
-			path = OrdoScan;
+			path = VoPoC;
 			sourceTree = "<group>";
 		};
 		4EE0518116247C7500634436 /* Supporting Files */ = {
@@ -275,7 +291,6 @@
 				4EE0519016247C7500634436 /* Default-568h@2x.png */,
 			);
 			name = "Supporting Files";
-			path = VoPoC;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -294,7 +309,7 @@
 			dependencies = (
 			);
 			name = VoPoC;
-			productName = OrdoScan;
+			productName = VoPoC;
 			productReference = 4EE0517616247C7500634436 /* VoPoC.app */;
 			productType = "com.apple.product-type.application";
 		};
@@ -321,6 +336,7 @@
 			targets = (
 				4EE0517516247C7500634436 /* VoPoC */,
 				4EAE7FFE1644339800A7CC40 /* Ad Hoc Distribution */,
+				4EC50D96165D836A002FBAB8 /* Ad Hoc Distribution 2 */,
 			);
 		};
 /* End PBXProject section */
@@ -379,6 +395,19 @@
 			shellPath = /bin/sh;
 			shellScript = "source ~/.profile\n\nbetaBuild.sh --projectDir \"$PROJECT_DIR\" --skipBuild --manifest --targetSDK \"$PLATFORM_NAME\" --configuration \"$CONFIGURATION\" --targetBuildFolder \"$TARGET_BUILD_DIR\" --targetFolderName VoPoC --outputFileName VoPoC.ipa --sourceAppName VoPoC.app --ftp\n";
 		};
+		4EC50D99165D836A002FBAB8 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "source ~/.profile\n\nbetaBuild.sh --projectDir \"$PROJECT_DIR\" --skipBuild --manifest --targetSDK \"$PLATFORM_NAME\" --configuration \"$CONFIGURATION\" --targetBuildFolder \"$TARGET_BUILD_DIR\" --targetFolderName VoPoC_2 --outputFileName VoPoC_2.ipa --sourceAppName VoPoC_2.app --ftp\n";
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -386,10 +415,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4EE0518716247C7500634436 /* main.m in Sources */,
-				4EE0518B16247C7500634436 /* AppDelegate.m in Sources */,
-				4EE0519416247C7500634436 /* ViewController.mm in Sources */,
-				4EC50D53165D6C3A002FBAB8 /* UIImage+CvMat.mm in Sources */,
+				4EC50D89165D7368002FBAB8 /* AppDelegate.m in Sources */,
+				4EC50D8A165D7368002FBAB8 /* ViewController.mm in Sources */,
+				4EC50D8B165D7368002FBAB8 /* UIImage+CvMat.mm in Sources */,
+				4EC50D8C165D736D002FBAB8 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -400,6 +429,11 @@
 			isa = PBXTargetDependency;
 			target = 4EE0517516247C7500634436 /* VoPoC */;
 			targetProxy = 4EAE8003164433CB00A7CC40 /* PBXContainerItemProxy */;
+		};
+		4EC50D97165D836A002FBAB8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4EE0517516247C7500634436 /* VoPoC */;
+			targetProxy = 4EC50D98165D836A002FBAB8 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -446,13 +480,13 @@
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: L'Atelier du Mobile";
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
-				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE = "171D370E-9D9C-4377-A428-60BB552A4028";
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 				VALID_ARCHS = armv7;
@@ -469,7 +503,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "VoPoC/OrdoScan-Prefix.pch";
 				INFOPLIST_FILE = "VoPoC/OrdoScan-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "$(TARGET_NAME)_2";
 				WRAPPER_EXTENSION = app;
 			};
 			name = "Distribution (adhoc)";
@@ -478,6 +512,27 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = "Distribution (adhoc)";
+		};
+		4EC50D9B165D836A002FBAB8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "Ad Hoc Distribution copy";
+			};
+			name = Debug;
+		};
+		4EC50D9C165D836A002FBAB8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "Ad Hoc Distribution copy";
+			};
+			name = Release;
+		};
+		4EC50D9D165D836A002FBAB8 /* Distribution (adhoc) */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "Ad Hoc Distribution copy";
 			};
 			name = "Distribution (adhoc)";
 		};
@@ -490,7 +545,7 @@
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "iPhone Developer: Mathieu Godart (FF7G7P9M8K)";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: L'Atelier du Mobile";
 				COPY_PHASE_STRIP = NO;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
@@ -504,7 +559,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				ONLY_ACTIVE_ARCH = YES;
-				PROVISIONING_PROFILE = "949B9BA0-0295-41BA-888E-17BDA211B47A";
+				PROVISIONING_PROFILE = "171D370E-9D9C-4377-A428-60BB552A4028";
 				SDKROOT = iphoneos;
 				VALID_ARCHS = armv7;
 			};
@@ -519,13 +574,13 @@
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: L'Atelier du Mobile";
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
-				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE = "171D370E-9D9C-4377-A428-60BB552A4028";
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 				VALID_ARCHS = armv7;
@@ -542,7 +597,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "VoPoC/OrdoScan-Prefix.pch";
 				INFOPLIST_FILE = "VoPoC/OrdoScan-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "$(TARGET_NAME)_2";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -557,7 +612,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "VoPoC/OrdoScan-Prefix.pch";
 				INFOPLIST_FILE = "VoPoC/OrdoScan-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "$(TARGET_NAME)_2";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -571,6 +626,16 @@
 				4EAE80001644339800A7CC40 /* Debug */,
 				4EAE80011644339800A7CC40 /* Release */,
 				4EAE8008164433D500A7CC40 /* Distribution (adhoc) */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4EC50D9A165D836A002FBAB8 /* Build configuration list for PBXAggregateTarget "Ad Hoc Distribution 2" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4EC50D9B165D836A002FBAB8 /* Debug */,
+				4EC50D9C165D836A002FBAB8 /* Release */,
+				4EC50D9D165D836A002FBAB8 /* Distribution (adhoc) */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
